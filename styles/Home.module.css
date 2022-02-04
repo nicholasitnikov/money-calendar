@@ -1,5 +1,25 @@
 .container {
-  padding: 0 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 25px;
+}
+
+.image {
+  max-height: 500px;
+  width: 100%;
+  object-fit: contain;
+  object-position: left;
+}
+
+.heading {
+  width: 100%;
+}
+
+.payment:hover {
+  opacity: .6;
 }
 
 .main {
