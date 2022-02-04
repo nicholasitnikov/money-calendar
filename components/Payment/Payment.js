@@ -15,8 +15,7 @@ const Payment = (props) => {
     return(
         <motion.span 
             onClick={paymentClickHandler} 
-            className={styles.payment} 
-            initial={{ background: 'white' }}
+            className={styles.payment}
             initial={{
                 backgroundColor: props.checked ? '#000000' : '#ffffff',  
                 paddingLeft: props.checked ? '15px' : '0',
