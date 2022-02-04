@@ -20,13 +20,13 @@ const Payment = (props) => {
                 backgroundColor: props.checked ? '#000000' : '#ffffff',  
                 paddingLeft: props.checked ? '15px' : '0',
                 color: props.checked ? '#ffffff' : '#000000',
-                backgroundPosition: props.checked ? '4px 6px' : '-10px 6px'
+                backgroundPosition: props.checked ? '4px 5px' : '-10px 5px'
             }}
             animate={{
                 backgroundColor: props.checked ? '#000000' : '#ffffff',  
                 paddingLeft: props.checked ? '15px' : '0',
                 color: props.checked ? '#ffffff' : '#000000',
-                backgroundPosition: props.checked ? '4px 6px' : '4px -10px'
+                backgroundPosition: props.checked ? '4px 5px' : '4px -10px'
             }}
             transition={{
                 type: 'spring',

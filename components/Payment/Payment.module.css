@@ -1,6 +1,6 @@
 .payment {
     border: 1px solid black;
-    width: 60px;
+    width: 50px;
     padding: 5px 0;
     text-align: center;
     border-radius: 5px;
@@ -8,9 +8,8 @@
     color: black;
     position: relative;
     overflow: hidden;
-    font-size: 14px;
+    font-size: 12px;
     background-image: url('/check.svg');
     background-size: 16px;
     background-repeat: no-repeat;
-    background-position: 4px 6px;
 }

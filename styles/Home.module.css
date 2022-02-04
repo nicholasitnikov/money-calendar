@@ -1,10 +1,11 @@
 .container {
   max-width: 500px;
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   flex-wrap: wrap;
-  gap: 10px;
   padding: 25px;
+  grid-gap: 14px 8px;
 }
 
 .image {
@@ -12,10 +13,12 @@
   width: 100%;
   object-fit: contain;
   object-position: left;
+  grid-column: 1/7;
 }
 
 .heading {
   width: 100%;
+  grid-column: 1/7;
 }
 
 .payment:hover {

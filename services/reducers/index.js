@@ -6,7 +6,7 @@ const paymentsReducer = (state = [], action) => {
 
     switch(action.type) {
         case SET_PAYMENTS: {
-            return action.payments.data;
+            return action.payments.data.sort((a,b) => a.id - b.id);
         }
         case UPDATE_PAYMENT: {
             return state.map(el => {
