@@ -19,6 +19,15 @@
 .heading {
   width: 100%;
   grid-column: 1/7;
+  color: white;
+  margin: 0;
+}
+
+.caption {
+  grid-column: 1/7;
+  color: white;
+  font-size: 18px;
+  padding-bottom: 20px;
 }
 
 .payment:hover {

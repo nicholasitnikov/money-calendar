@@ -17,16 +17,16 @@ const Payment = (props) => {
             onClick={paymentClickHandler} 
             className={styles.payment}
             initial={{
-                backgroundColor: props.checked ? '#000000' : '#ffffff',  
+                backgroundColor: props.checked ? '#ffffff' : 'transparent',  
                 paddingLeft: props.checked ? '15px' : '0',
-                color: props.checked ? '#ffffff' : '#000000',
-                backgroundPosition: props.checked ? '4px 5px' : '-10px 5px'
+                color: props.checked ? '#000000' : '#ffffff',
+                backgroundPosition: props.checked ? '4px 5px' : '4px -15px'
             }}
             animate={{
-                backgroundColor: props.checked ? '#000000' : '#ffffff',  
+                backgroundColor: props.checked ? '#ffffff' : 'transparent',  
                 paddingLeft: props.checked ? '15px' : '0',
-                color: props.checked ? '#ffffff' : '#000000',
-                backgroundPosition: props.checked ? '4px 5px' : '4px -10px'
+                color: props.checked ? '#000000' : '#ffffff',
+                backgroundPosition: props.checked ? '4px 5px' : '4px -15px'
             }}
             transition={{
                 type: 'spring',

@@ -27,9 +27,15 @@ export default function Home() {
     }, 0)
   }, [payments])
 
+  const calculateGoal = useMemo(() => {
+    return payments.reduce((res, current) => {
+      return res + current.amount;
+    }, 0)
+  }, [payments])
+
   return(<main className={styles.container}>
-    <img className={styles.image} src='https://i.pinimg.com/736x/2d/3f/c6/2d3fc6a07aee05407f3887a4572df43a.jpg' alt='spb'/>
     <h1 className={styles.heading}>Всего: {calculateTotal} ₽</h1>
+    <span className={styles.caption}>из {calculateGoal} ₽</span>
     {renderPayments}
   </main>);
 }
